@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- <classPathEntry location="/Users/ouroc/.m2/repository/org/mybatis/mybatis/3.0.5/mybatis-3.0.5-sources.jar" 
+		/> -->
+
+	<classPathEntry location="C:\Users\Fengxiangzhu\.m2\repository\mysql\mysql-connector-java\5.1.17\mysql-connector-java-5.1.17.jar" />
+	<context id="context1">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://10.135.63.32:3306/rapoo_authorization" userId="oopassuser"
+			password="wj6jzrhp" />
+		<javaModelGenerator
+			targetPackage="com.oosic.webservice.model.po"
+			targetProject="springTemplate" />
+		<sqlMapGenerator targetPackage="com.oosic.webservice.mybatis.data"
+			targetProject="springTemplate" />
+		<javaClientGenerator
+			targetPackage="com.oosic.webservice.mybatis.data"
+			targetProject="springTemplate" type="XMLMAPPER" />
+
+		<table tableName="tb_account" domainObjectName="Account"></table>
+	</context>
+</generatorConfiguration>
